@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Website</title>
+     <link rel="shortcut icon" href="image/icon2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="travel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ 
+
+
+ <!------------- header section ------------->
+
+ <nav class="navbar" id="navbar">
+    <div class="logo">Travel <span>GO</span></div>
+    <ul class="nav-links" id="menuList">
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#register">Register</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#facilities">Facilities</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About Us</a></li>
+      
+    </ul>
+    <div class="search-box">
+        <input type="text" placeholder="Search" />
+        <button>Search</button>
+      </div>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i id="menu-bar" class="fa-solid fa-bars"></i>
+      </div>
+  </nav>
+
+    
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <h1>Discover. Explore. Dream.</h1>
+          <p>Your adventure starts here!<br>The journey of a thousand miles begins with a single step.</p>
+          <a href="#register" class="btn">Reserve your spot...</a>
+        </div>
+       
+      </section>
+
+       <!--------------------book section -------------------->
+
+       <section class="book" id="register">
+        <h1 class="heading"> Register<span> now</span></h1>
+
+       <div class="row">
+        
+        <div class="image">
+            <img src="image/travel1.avif" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>where to</h3>
+                <input type="text"placeholder="places name" >
+            </div>
+            <div class="inputBox">
+                <h3>how many</h3>
+                <input type="number"placeholder="number of guests" >
+            </div>
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <textarea name="Message" rows="6" placeholder="Enter your Name And Details" class="form-input"></textarea>
+            </div>
+            <input type="submit" class="btn" value="book now">
+        </form>
+       </div>
+    </section>
+
+    <!---------------- Packages section -------------->
+
+     <section class="packages" id="packages">
+        <h1 class="heading"> <span>P</span>ackages</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="image/122.avif">
+                <div class="content">
+                    <h3> <i class="fa-solid fa-location-dot"></i>Paris</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="price">$80.00 <span>$110.00</span></div>
+                    <a href="" class="btn">Book now</a>
+                </div>
+            </div>
+            
+            <div class="box">
+                <img src="image/123.avif">
+                <div class="content">
+                    <h3> <i class="fa-solid fa-location-dot"></i>Kerala</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="" class="btn">Book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/img1.webp">
+                <div class="content">
+                    <h3> <i class="fa-solid fa-location-dot"></i>Delhi</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="price">$100.00 <span>$130.00</span></div>
+                    <a href="" class="btn">Book now</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="image/124.avif">
+                <div class="content">
+                    <h3> <i class="fa-solid fa-location-dot"></i>Dubai </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="" class="btn">Book now</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="image/126.avif">
+                <div class="content">
+                    <h3> <i class="fa-solid fa-location-dot"></i>New York</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="price">$70.00 <span>$150.00</span></div>
+                    <a href="" class="btn">Book now</a>
+                </div>
+            </div>
+            
+            <div class="box">
+                <img src="image/127.avif">
+                <div class="content">
+                    <h3> <i class="fa-solid fa-location-dot"></i>Goa</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #fec90b;"></i>
+                        <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="price">$110.00 <span>$150.00</span></div>
+                    <a href="" class="btn">Book now</a>
+                </div>
+            </div>
+        </div>
+     </section>
+
+      <!---------------- facilities section -------------->
+   
+      <section class="facilities" id="facilities">
+        <h1 class="heading"> <span>F</span>acilities</h1>
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fa-solid fa-hotel"></i>
+                <h3>Budget Accommodation</h3>
+                <p>comfortable accommodations at a reasonable price, making it an ideall choice for budget-conscious travelers.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>Meals And Refreshments</h3>
+                <p>The menu offers a wide variety of foods and drinks,ranging from savory dishes to refreshing beverages</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-head-side-mask"></i>
+                <h3>Safety Protocol</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ut.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-earth-americas"></i>
+                <h3>Acrooss The Globe</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ut.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-plane"></i>
+                <h3>Quick Trip</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ut.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-person-hiking"></i>
+                <h3>Explorations</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, ut.</p>
+            </div>
+        </div>
+      </section>
+
+        <!---------------- Gallery section -------------->
+
+        <section class="gallery" id="gallery">
+            <h1 class="heading"> <span>G</span>allerys</h1>
+            <div class="gallery-container">
+                <img src="image/122.avif" alt="">
+                <img src="image/123.avif" alt="">
+                <img src="image/124.avif" alt="">
+                <img src="image/127.avif" alt="">
+                <img src="image/126.avif" alt="">
+                <img src="image/img1.webp" alt="">
+            </div>
+              </section>
+
+               <!---------------- About section -------------->
+
+               <section class="about" id="about">
+                <h1 class="heading">About <span>Us</span></h1>
+              
+                <div class="about-container">
+                  <div class="box">
+                    <img src="image/img2.webp" alt="Travel Image" />
+                  </div>
+              
+                  <div class="about-text">
+                    <h3>How Travel Agencies Operate</h3>
+                    <p>
+                      Travel is a gateway to discovering the world’s wonders, offering opportunities to explore
+                      new cultures, landscapes, and experiences. It broadens horizons, fosters connections, and
+                      creates memories that last a lifetime. Whether it’s wandering through bustling city streets,
+                      trekking across serene mountains, or relaxing on sun-kissed beaches, travel inspires a sense
+                      of adventure and renewal.
+                    </p>
+                    <a href="#" class="btn">Read More...</a>
+                  </div>
+                </div>
+              </section>
+
+
+
+              <footer class="footer">
+                <h2><span class="heading">T</span>ravel</h2>
+                <p>Feel free to reach out to us for any inquiries or assistance.</p>
+              
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+              
+                <p>Crafted By <a href="" class="xplores">Xplores</a></p>
+                <p>&copy;Copyright Xplores. All Rights Reserved</p>
+              </footer>
+              <a href="" class="top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    
+    
+    <script src="demo.js"></script>
+    
+    
+</body>
+</html>
